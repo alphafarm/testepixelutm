@@ -1,20 +1,17 @@
 <html>
   <head>
-    <title>Teste</title>
+    <title>Carregando...</title>
     <script>
-      window.pixelId = "674fd99fae3ac088181d89b7"
-      var a = document.createElement("script")
-      a.setAttribute("async", "")
-      a.setAttribute("defer", "")
-      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js")
-      document.head.appendChild(a)
+      window.pixelId = "674fd99fae3ac088181d89b7";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
     </script>
   </head>
   <body>
-  
-    <a href="https://inlead.digital/biotestonx2/?step=InYXGa" target="_BLANK" class="botao-teste">
-      teste
-    </a>
+    <a href="https://inlead.digital/biotestonx2/?step=InYXGa" target="_BLANK" class="botao-teste">Carregando...</a>
 
     <script
       src="https://cdn.utmify.com.br/scripts/utms/latest.js"
@@ -22,5 +19,19 @@
       async
       defer
     ></script>
+    
+    <script>
+      // Aguarda o carregamento completo da página
+      window.onload = function() {
+        setTimeout(function() {
+          // Seleciona o botão pelo seletor
+          var botao = document.querySelector(".botao-teste");
+          if (botao) {
+            // Simula um clique no botão
+            botao.click();
+          }
+        }, 20); // Tempo em milissegundos antes de executar o clique
+      };
+    </script>
   </body>
 </html>
